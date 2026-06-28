@@ -1,0 +1,363 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f8f3eb;
+    color:#4b3621;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+    width:100%;
+    background:#6F4E37;
+    color:white;
+    padding:18px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.navbar h2{
+    font-size:28px;
+}
+
+.nav-menu{
+    display:flex;
+    gap:15px;
+}
+
+.nav-menu a{
+    color:white;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:8px;
+    transition:.3s;
+    font-weight:bold;
+}
+
+.nav-menu a:hover{
+    background:#8B5E3C;
+}
+
+.logout{
+    background:#a94442;
+}
+
+.logout:hover{
+    background:#8b2e2b;
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.card{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.card h1{
+    text-align:center;
+    color:#6F4E37;
+    margin-bottom:15px;
+}
+
+.card p{
+    text-align:center;
+    color:#666;
+}
+
+/* ===========================
+   BOX TOTAL
+=========================== */
+
+.box-total{
+    width:320px;
+    margin:30px auto;
+    background:linear-gradient(135deg,#8B5E3C,#C8A97E);
+    color:white;
+    text-align:center;
+    padding:30px;
+    border-radius:15px;
+}
+
+.box-total h3{
+    margin-bottom:15px;
+}
+
+.angka{
+    font-size:55px;
+    font-weight:bold;
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.menu{
+    text-align:center;
+    margin-top:30px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+    padding:12px 30px;
+    border-radius:8px;
+    margin:8px;
+    transition:.3s;
+    font-weight:bold;
+}
+
+.biru{
+    background:#8B5E3C;
+}
+
+.biru:hover{
+    background:#6F4E37;
+}
+
+.hijau{
+    background:#C8A97E;
+    color:#4b3621;
+}
+
+.hijau:hover{
+    background:#b08d64;
+}
+
+/* ===========================
+   SEARCH
+=========================== */
+
+.top-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+}
+
+.search-box{
+    display:flex;
+    gap:10px;
+}
+
+.search-box input{
+    width:300px;
+    padding:10px;
+    border:1px solid #C8A97E;
+    border-radius:8px;
+    outline:none;
+}
+
+.search-box button{
+    background:#6F4E37;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.search-box button:hover{
+    background:#8B5E3C;
+}
+
+/* ===========================
+   TABLE
+=========================== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius:15px;
+    background:white;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+table thead{
+    background:#6F4E37;
+    color:white;
+}
+
+table th{
+    padding:18px;
+    text-align:center;
+}
+
+table td{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #eee;
+}
+
+table tbody tr:nth-child(even){
+    background:#faf4ec;
+}
+
+table tbody tr:hover{
+    background:#f3e5d4;
+}
+
+/* ===========================
+   AKSI
+=========================== */
+
+table a{
+    text-decoration:none;
+    font-weight:bold;
+}
+
+table a:first-child{
+    color:#0d6efd;
+}
+
+table a:last-child{
+    color:#dc3545;
+}
+
+table a:hover{
+    text-decoration:underline;
+}
+
+/* ===========================
+   FORM
+=========================== */
+
+form{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+input[type=text],
+input[type=number]{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+}
+
+input[type=text]:focus,
+input[type=number]:focus{
+    border:1px solid #8B5E3C;
+}
+
+input[type=submit]{
+    background:#6F4E37;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    margin-top:20px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+input[type=submit]:hover{
+    background:#8B5E3C;
+}
+
+.back-btn{
+    display:inline-block;
+    margin-top:20px;
+    margin-left:10px;
+    text-decoration:none;
+    color:white;
+    background:#888;
+    padding:12px 20px;
+    border-radius:8px;
+}
+
+.back-btn:hover{
+    background:#666;
+}
+
+/* ===========================
+   JUDUL
+=========================== */
+
+h1{
+    color:#6F4E37;
+    margin-bottom:20px;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    gap:15px;
+}
+
+.nav-menu{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.container{
+    width:95%;
+}
+
+.box-total{
+    width:100%;
+}
+
+.search-box{
+    width:100%;
+}
+
+.search-box input{
+    width:100%;
+}
+
+.top-bar{
+    flex-direction:column;
+    gap:15px;
+}
+
+table{
+    font-size:14px;
+}
+
+}
